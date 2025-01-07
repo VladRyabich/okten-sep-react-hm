@@ -1,0 +1,9 @@
+.complete {
+    color: #9ac19a;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+}
+
+.not-complete {
+    color: #e48e96;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+}
