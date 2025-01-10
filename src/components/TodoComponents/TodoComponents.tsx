@@ -16,7 +16,7 @@ export const TodoComponents = () => {
     return (
         <>
             {
-                todos.map(todo => <TodoComponent key={todo.id} item={todo}/>)
+                todos.map(todo => <TodoComponent key={todo.id} todo={todo}/>)
             }
         </>
     );
