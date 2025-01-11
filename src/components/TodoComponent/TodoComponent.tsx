@@ -1,10 +1,11 @@
 import {ITodo} from "../../models/ITodo.ts";
+import './TodoComponent.css';
 
 interface TodoComponentProps {
     todo: ITodo;
 }
 
-export const TodoComponent = ({todo}: TodoComponentProps) => {
+const TodoComponent = ({todo}: TodoComponentProps) => {
     return (
         <>
             <div className={'p-7 ml-6 mt-2 border-2'}>
@@ -23,3 +24,7 @@ export const TodoComponent = ({todo}: TodoComponentProps) => {
         </>
     );
 };
+
+export {
+    TodoComponent
+}

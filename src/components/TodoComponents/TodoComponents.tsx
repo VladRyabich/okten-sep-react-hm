@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {ITodo} from "../../models/ITodo.ts";
 import {getAllTodos} from "../../services/api.service.ts";
 
-export const TodoComponents = () => {
+const TodoComponents = () => {
     const [todos, setTodos] = useState<ITodo[]>([]);
 
     useEffect(() => {
@@ -17,3 +17,7 @@ export const TodoComponents = () => {
         </>
     );
 };
+
+export {
+    TodoComponents
+}
