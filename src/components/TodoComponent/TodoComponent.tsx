@@ -17,7 +17,7 @@ export const TodoComponent = ({todo}: TodoComponentProps) => {
                     <span className={'text-2xl'}>{todo.id}</span>
                 </h3>
                 <p className={todo.completed ? 'complete' : 'not-complete'}>
-                    {todo.title}
+                    {todo.todo}
                 </p>
             </div>
         </>
