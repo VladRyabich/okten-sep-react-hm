@@ -1,0 +1,18 @@
+.menu-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.menu-item {
+    padding: 12px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    padding: 12px 48px;
+}

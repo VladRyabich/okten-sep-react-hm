@@ -1,0 +1,52 @@
+
+/*User Page*/
+
+
+/*Post Page*/
+h2,h3,p {
+    margin-bottom: 15px;
+}
+
+
+.posts-item {
+    border: 2px solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.id-title,
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: black;
+    text-shadow: none;
+}
+
+.id,
+.title {
+    font-size: 24px;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.reaction-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.likes,
+.viwes {
+    padding: 10px;
+
+    border-radius: 5px;
+    background-color: #a90000;
+    color: white;
+}
+
+.likes-title,
+.viwes-title {
+    margin-right: 10px;
+}
