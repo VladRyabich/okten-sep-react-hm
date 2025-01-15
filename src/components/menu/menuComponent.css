@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    width: 135px;
+    padding: 24px 48px;
+    background-color: #000;
+    color: #fff;
+}
