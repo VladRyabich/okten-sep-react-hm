@@ -1,11 +1,11 @@
 import {Outlet} from "react-router-dom";
 import {PaginationComponent} from "../components/pagination-component/PaginationComponent.tsx";
-import {MenuLayout} from "./MenuLayout.tsx";
+import {MenuComponent} from "../components/menu/MenuComponent.tsx";
 
 export const PaginationLayout = () => {
     return (
         <>
-            <MenuLayout/>
+            <MenuComponent/>
             <Outlet/>
             <PaginationComponent/>
         </>
