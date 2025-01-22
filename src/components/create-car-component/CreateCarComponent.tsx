@@ -4,7 +4,6 @@ import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
 import {carValidator} from "../../validators/carValidator.ts";
 import './createCarComponent.css';
-import {isValidElement} from "react";
 
 export const CreateCarComponent = () => {
     const {register, handleSubmit, formState: {errors, isValid}} = useForm<ICar>({
