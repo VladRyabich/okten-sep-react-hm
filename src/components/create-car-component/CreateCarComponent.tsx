@@ -4,9 +4,10 @@ import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
 import {carValidator} from "../../validators/carValidator.ts";
 import './createCarComponent.css';
+import {isValidElement} from "react";
 
 export const CreateCarComponent = () => {
-    const {register, handleSubmit, formState: {errors}} = useForm<ICar>({
+    const {register, handleSubmit, formState: {errors, isValid}} = useForm<ICar>({
         mode: "all",
         resolver:joiResolver(carValidator)
     });
@@ -30,7 +31,9 @@ export const CreateCarComponent = () => {
                     <div>{errors.year?.message}</div>
                 </div>
 
-                <button className={'create-btn'}>Save car</button>
+                <button
+                    disabled={!isValid}
+                    className={'create-btn'}>Save car</button>
             </form>
         </>
     );
