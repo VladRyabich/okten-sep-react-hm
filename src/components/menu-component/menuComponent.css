@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    list-style: none;
+}
+
+.menu-item {
+    font-size: 24px;
+}
+
+.menu-item:focus,
+.menu-item:hover {
+    text-shadow: 1px 1px 2px black;
+}

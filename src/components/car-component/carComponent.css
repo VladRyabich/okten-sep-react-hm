@@ -1,0 +1,14 @@
+.car-block {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    width: calc((100% - 24px * 3) / 4);
+
+    border: 2px solid;
+}
+
+.car-info {
+    margin: 5px;
+}
