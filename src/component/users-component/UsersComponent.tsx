@@ -2,8 +2,6 @@ import {UserComponent} from "../user-component/UserComponent.tsx";
 import {useCallback, useEffect, useMemo, useState} from "react";
 
 export const UsersComponent = () => {
-    console.log('users');
-
     const [users, setUsers] = useState([]);
     console.log(users);
 
