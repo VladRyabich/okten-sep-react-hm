@@ -5,6 +5,7 @@ export const UsersComponent = () => {
     console.log('users');
 
     const [users, setUsers] = useState([]);
+    console.log(users);
 
     //кешує function для уникнення рендиренгу
     const foo = useCallback(() => {
