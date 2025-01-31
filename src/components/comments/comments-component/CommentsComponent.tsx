@@ -9,7 +9,7 @@ export const CommentsComponent = () => {
     const comments = useAppSelector(state => state.commentStoreSlice.comments);
 
     useEffect(() => {
-        dispatch(commentAction.loadComments);
+        dispatch(commentAction.loadComments());
     }, []);
 
     return (

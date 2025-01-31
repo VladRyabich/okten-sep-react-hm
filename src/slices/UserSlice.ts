@@ -9,9 +9,12 @@ const initUserSliceState: UserSliceType = {users:[]};
 
 const loadUsers =
     createAsyncThunk('LoadUsers', async (_, thunkAPI) => {
+        try {
         const users = await getAll<IUser[]>('/users');
-        console.log(users);
         return thunkAPI.fulfillWithValue(users);
+        }catch (e) {
+            return thunkAPI.rejectWithValue(e);
+        }
 });
 
 export const userSlice = createSlice({

@@ -6,6 +6,7 @@ export const Menu = () => {
             <li><Link to={'/users'}>users</Link></li>
             <li><Link to={'/posts'}>posts</Link></li>
             <li><Link to={'/comments'}>comments</Link></li>
+            <li><Link to={'/complex'}>complex</Link></li>
         </ul>
     );
 };
